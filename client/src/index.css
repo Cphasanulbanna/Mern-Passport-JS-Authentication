@@ -17,6 +17,12 @@ a {
     font-size: 16px;
 }
 
+.wrapper {
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 img {
     display: block;
     width: 100%;

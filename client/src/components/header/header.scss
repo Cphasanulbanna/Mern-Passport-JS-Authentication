@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 18px;
+        }
+        div.logout-button {
+            border-radius: 4px;
+            overflow: hidden;
+            padding: 10px 20px;
+            border: 0.5px solid #7c7c7c;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        div.logout-button:hover {
+            opacity: 0.8;
+        }
+    }
+}
