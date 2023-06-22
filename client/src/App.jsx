@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import Post from "./components/post/Post";
+import PostSinglepage from "./pages/post-singlepage/PostSinglepage";
 
 const App = () => {
     return (
@@ -20,7 +20,7 @@ const App = () => {
                 />
                 <Route
                     path="/post/:id"
-                    element={<Post />}
+                    element={<PostSinglepage />}
                 />
             </Routes>
         </>
