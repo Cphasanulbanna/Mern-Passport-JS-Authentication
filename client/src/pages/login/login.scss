@@ -1,0 +1,125 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    .wrapper {
+        width: 60%;
+        height: 70%;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        padding: 60px 40px;
+        background-color: #fff;
+        display: flex;
+
+        h1 {
+            position: absolute;
+            top: 40px;
+            color: lightgray;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .left,
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            flex: 1;
+        }
+
+        .left {
+            .login-button {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                border-radius: 5px;
+                padding: 15px 25px;
+                width: 200px;
+                cursor: pointer;
+
+                .logo {
+                    width: 20px;
+                }
+                h2 {
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+            .login-button:first-child {
+                background-color: #df4930;
+            }
+            .login-button:nth-child(2) {
+                background-color: #507cc0;
+            }
+            .login-button:last-child {
+                background-color: #000;
+            }
+            .login-button:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .right form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            input {
+                padding: 15px 20px;
+                width: 200px;
+                border-radius: 5px;
+                font-size: 16px;
+                border: 1px solid lightgray;
+            }
+            button {
+                border-radius: 5px;
+                width: 200px;
+                padding: 15px 20px;
+                background-color: #8c23a4;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            button:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .middle {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            .or {
+                font-size: 22px;
+                font-weight: bold;
+                color: rgb(159, 159, 159);
+                padding: 14px 12px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 1px solid rgb(159, 159, 159);
+            }
+            .line {
+                position: absolute;
+                z-index: -1;
+                width: 1px;
+                background-color: lightgray;
+                height: 75%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+}
