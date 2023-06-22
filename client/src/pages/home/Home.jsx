@@ -12,7 +12,10 @@ const Home = () => {
             className="wrapper"
         >
             {posts?.map((post) => (
-                <Post post={post} />
+                <Post
+                    post={post}
+                    key={post.id}
+                />
             ))}
         </section>
     );

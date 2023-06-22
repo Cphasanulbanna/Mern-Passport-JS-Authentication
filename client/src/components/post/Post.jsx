@@ -1,10 +1,14 @@
 import React from "react";
 
 import "./post.scss";
+import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
     return (
-        <div id="post">
+        <Link
+            to={`/post/${post.id}`}
+            id="post"
+        >
             <span className="title">{post.title}</span>
             <div className="image">
                 <img
@@ -14,7 +18,7 @@ const Post = ({ post }) => {
             </div>
             <p>{post.description}</p>
             <button>Read More</button>
-        </div>
+        </Link>
     );
 };
 

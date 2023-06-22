@@ -3,9 +3,12 @@ import React from "react";
 import "./post-singlepage.scss";
 
 import { posts } from "../../data";
+import { useLocation } from "react-router-dom";
 
 const PostSinglepage = () => {
-    const post = posts[2];
+    const location = useLocation();
+    const path = location.pathname.split("/")[2];
+    const post = posts.find((post) => post.id.toString() === path);
     return (
         <div className="post wrapper">
             <div className="image">
