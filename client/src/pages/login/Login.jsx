@@ -7,12 +7,18 @@ import facebook from "../../assets/images/facebook.png";
 import github from "../../assets/images/github.png";
 
 const Login = () => {
+    const googleLogin = () => {
+        window.open("http://localhost:5500/auth/google", "_self");
+    };
     return (
         <div className="login-container">
             <div className="wrapper">
                 <h1>Choose a login method</h1>
                 <div className="left">
-                    <div className="login-button">
+                    <div
+                        onClick={googleLogin}
+                        className="login-button"
+                    >
                         <div className="logo">
                             <img
                                 src={google}
